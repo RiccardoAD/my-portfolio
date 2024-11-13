@@ -19,9 +19,8 @@
 // }
 
 // export default Skills;
-
 import React from 'react';
-
+import  gif from '../assets/img/professional skills.gif';
 
 function Skills() {
   return (
@@ -31,15 +30,138 @@ function Skills() {
         <div>
           <h2 className="skills__subtitle">Professional Skills</h2>
           <p className="skills__text">Take a look at some of the things I love working on.</p>
+
           {/* Front-end Skills */}
           <div className="skills__data">
             <div className="skills__names">
-              <img src="https://icon-library.com/images/programming-code-icon/programming-code-icon-5.jpg" alt="programming" width="30" height="40" />
+              <img
+                src="https://icon-library.com/images/programming-code-icon/programming-code-icon-5.jpg"
+                alt="Front-end icon"
+                width="30"
+                height="40"
+              />
+              &nbsp;
               <span className="skills__name">Front-end languages:</span>
-              {/* Add icons for HTML, CSS, JavaScript, TypeScript */}
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png"
+                  alt="HTML5"
+                  width="40"
+                  height="40"
+                />
+              </a>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png"
+                  alt="CSS3"
+                  width="30"
+                  height="40"
+                />
+              </a>
+              &nbsp;
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                <img
+                  src="https://gitlab.schukai.com/uploads/-/system/group/avatar/139/javascript.png"
+                  alt="JavaScript"
+                  width="40"
+                />
+              </a>
+              &nbsp;
+              <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/640px-Typescript_logo_2020.svg.png"
+                  alt="TypeScript"
+                  width="35"
+                />
+              </a>
+            </div>
+            <div className="skills__bar skills__html"></div>
+          </div>
+
+          {/* Data Visualization Skills */}
+          <div className="skills__data">
+            <div className="skills__names">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnRW9ooon2t8fhS_SBJfc8XS8nvkS4sveecQ&usqp=CAU"
+                alt="Data visualization icon"
+                width="30"
+                height="40"
+              />
+              &nbsp;
+              <span className="skills__name">Data Visualization:</span>
+              <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/640px-React_Logo_SVG.svg.png"
+                  alt="React"
+                  width="40"
+                  height="40"
+                />
+              </a>
+              &nbsp;
+              <a href="https://d3js.org/" target="_blank" rel="noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Logo.min.svg/640px-Logo.min.svg.png"
+                  alt="D3.js"
+                  width="64"
+                />
+              </a>
+              <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank" rel="noreferrer">
+                <img
+                  src="https://www.logo.wine/a/logo/Microsoft_Excel/Microsoft_Excel-Logo.wine.svg"
+                  alt="Excel"
+                  width="64"
+                />
+              </a>
+            </div>
+            <div className="skills__bar skills__html"></div>
+          </div>
+
+          {/* Back-end Skills */}
+          <div className="skills__data">
+            <div className="skills__names">
+              <img
+                src="https://media.istockphoto.com/id/1238951588/vector/database-icon.jpg?s=612x612&w=0&k=20&c=FDz7njKjWIYhiV-CDgJoj8fkkmSrtv88Tv7SiN_E08Y="
+                alt="Back-end icon"
+                width="50"
+              />
+              <span className="skills__name">Back-end:</span>
+              <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+                <img
+                  src="https://www.svgrepo.com/show/303251/mysql-logo.svg"
+                  alt="MySQL"
+                  width="60"
+                  height="40"
+                />
+              </a>
+              &nbsp;
+              <a href="https://www.php.net/" target="_blank" rel="noreferrer">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Php-logo.png/640px-Php-logo.png"
+                  alt="PHP"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </div>
+            <div className="skills__bar skills__js"></div>
+          </div>
+
+          {/* UX/UI Skills */}
+          <div className="skills__data">
+            <div className="skills__names">
+              <i className="bx bxs-paint skills__icon"></i>
+              <span className="skills__name">UX/UI</span>
+            </div>
+            <div className="skills__bar skills__ux"></div>
+            <div>
+              <span className="skills__percentage">75%</span>
             </div>
           </div>
-          {/* More skill sections can be added similarly */}
+        </div>
+
+        {/* Additional Skills Image */}
+        <div>
+          <img src={gif} alt="Skills GIF" className="skills__img" />
         </div>
       </div>
     </section>

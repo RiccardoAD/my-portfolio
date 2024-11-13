@@ -24,28 +24,51 @@
 // export default Projects;
 
 import React from 'react';
+import work2Image from '../assets/img/work2.png'; // Importa le immagini
+import work1Image from '../assets/img/work1.png';
 
 
 function Projects() {
   return (
-    <section className="work section" id="work">
-      <h2 className="section-title">Projects</h2>
-      <div className="work__container bd-grid">
-        {/* Project 1 */}
-        <div className="card">
-          <img src="./assets/img/work2.png" className="work__img" alt="project2" />
-          <div className="card__body">
-            <h2 className="card__title">Html Css</h2>
-            <p className="card__info">Landing page for a water filter company</p>
-            <a href="https://github.com/RiccardoAD/Progetto-intro-Sviluppo-di-Riccardo-Adorni" target="_blank" rel="noreferrer">
-              <button className="card__btn">repo</button>
-            </a>
+        <section className="work section" id="work">
+          <h2 className="section-title">Projects</h2>
+          <div className="work__container bd-grid">
+            
+            {/* Card 1 */}
+            <div className="card">
+              <img src={work2Image} className="work__img" alt="project2" />
+              <div className="card__body">
+                <h2 className="card__title">Html Css</h2>
+                <p className="card__info">Landing page for a water filter company</p>
+                <a
+                  href="https://github.com/RiccardoAD/Progetto-intro-Sviluppo-di-Riccardo-Adorni"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="card__btn">repo</button>
+                </a>
+              </div>
+            </div>
+    
+            {/* Card 2 */}
+            <div className="card">
+              <img src={work1Image} className="work__img" alt="project1" />
+              <div className="card__body">
+                <h2 className="card__title">Laravel-React</h2>
+                <p className="card__info">Hotel management system</p>
+                <a
+                  href="https://github.com/RiccardoAD/epicode-full-stack-ptoject"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="card__btn">repo</button>
+                </a>
+              </div>
+            </div>
+    
           </div>
-        </div>
-        {/* More project cards */}
-      </div>
-    </section>
-  );
-}
-
-export default Projects;
+        </section>
+      );
+    }
+    
+    export default Projects;

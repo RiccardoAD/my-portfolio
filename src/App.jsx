@@ -7,7 +7,9 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
+// import CV from './components/cv/Cv';
 
 function App() {
   useEffect(() => {
@@ -37,9 +39,16 @@ function App() {
   }, []);
 
   return (
+
     <div className="App">
       <Header />
       <main>
+    {/* <Router>
+      <Routes> */}
+        {/* <Route path="/" element={<Home />} />
+        <Route path="/cv" element={<CV />} />
+      </Routes>
+    </Router> */}
         <Home />
         <About />
         <Skills />

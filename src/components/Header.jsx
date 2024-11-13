@@ -27,29 +27,31 @@
 // export default Header;
 
 import React, { useEffect } from 'react';
+import logo from '../assets/img/logoV2.png'
 
 
 function Header() {
     useEffect(() => {
         const toggle = document.getElementById('nav-toggle');
         const nav = document.getElementById('nav-menu');
-    
-        if (toggle && nav) {
-          toggle.addEventListener('click', () => {
+        const toggleMenu = () => {
             nav.classList.toggle('show');
-          });
-        }
+          };
+    
+        
+          if (toggle && nav) {
+            toggle.addEventListener('click', toggleMenu);
+          }
+        
     
         // Rimuovi il listener quando il componente viene smontato
         return () => {
-          if (toggle) {
-            toggle.removeEventListener('click', () => {
-              nav.classList.toggle('show');
-            });
-          }
-        };
-      }, []);
-    
+            if (toggle) {
+              toggle.removeEventListener('click', toggleMenu);
+            }
+          };
+        }, []);
+        
       useEffect(() => {
         const navLink = document.querySelectorAll('.nav__link');
         const navMenu = document.getElementById('nav-menu');
@@ -69,7 +71,7 @@ function Header() {
     <header className="l-header">
       <nav className="nav bd-grid">
         <div>
-          <img src="./assets/img/logoV2.png" alt="logo" className="logo" />
+          <img src= {logo} alt="logo" className="logo" />
           <a href="#" className="nav__logo"></a>
         </div>
         <div className="nav__menu" id="nav-menu">

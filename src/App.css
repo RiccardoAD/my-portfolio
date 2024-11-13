@@ -194,7 +194,12 @@ img {
   right: 0;
 }
 
+.nav__menu.show {
+  display: block; /* Mostra quando attivato */
+}
+
 /*===== HOME =====*/
+
 .home {
   position: relative;
   row-gap: 5rem;
