@@ -69,7 +69,7 @@ function Projects() {
               </div>
             </div>
             <div className="card">
-              <img src={work1Image} className="work__img" alt="project1" />
+              <img src={work3Image} className="work__img" alt="project1" />
               <div className="card__body">
                 <h2 className="card__title">react</h2>
                 <p className="card__info">vegetrian website
