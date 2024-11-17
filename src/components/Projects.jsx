@@ -26,6 +26,9 @@
 import React from 'react';
 import work2Image from '../assets/img/work2.png'; // Importa le immagini
 import work1Image from '../assets/img/work1.png';
+import work3Image from '../assets/img/work3.png';
+import work4Image from '../assets/img/work4.png';
+import work5Image from '../assets/img/work5.png';
 
 
 function Projects() {
@@ -58,6 +61,49 @@ function Projects() {
                 <p className="card__info">Hotel management system</p>
                 <a
                   href="https://github.com/RiccardoAD/epicode-full-stack-ptoject"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="card__btn">repo</button>
+                </a>
+              </div>
+            </div>
+            <div className="card">
+              <img src={work1Image} className="work__img" alt="project1" />
+              <div className="card__body">
+                <h2 className="card__title">react</h2>
+                <p className="card__info">vegetrian website
+                </p>
+                <a
+                  href="https://github.com/RiccardoAD/leafybite"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="card__btn">repo</button>
+                </a>
+              </div>
+            </div>
+            <div className="card">
+              <img src={work4Image} className="work__img" alt="project1" />
+              <div className="card__body">
+                <h2 className="card__title">wordpress</h2>
+                <p className="card__info">theme 1</p>
+                <a
+                  // href="https://github.com/RiccardoAD/epicode-full-stack-ptoject"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="card__btn">repo</button>
+                </a>
+              </div>
+            </div>
+            <div className="card">
+              <img src={work5Image} className="work__img" alt="project1" />
+              <div className="card__body">
+                <h2 className="card__title">WordPress</h2>
+                <p className="card__info">theme 2 </p>
+                <a
+                  // href="https://github.com/RiccardoAD/epicode-full-stack-ptoject"
                   target="_blank"
                   rel="noreferrer"
                 >
