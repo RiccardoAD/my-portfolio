@@ -57,7 +57,7 @@ function Projects() {
             <div className="card">
               <img src={work1Image} className="work__img" alt="project1" />
               <div className="card__body">
-                <h2 className="card__title">Laravel-React</h2>
+                <h2 className="card__title">Laravel</h2>
                 <p className="card__info">Hotel management system</p>
                 <a
                   href="https://github.com/RiccardoAD/epicode-full-stack-ptoject"
@@ -89,7 +89,7 @@ function Projects() {
                 <h2 className="card__title">wordpress</h2>
                 <p className="card__info">theme 1</p>
                 <a
-                  // href="https://github.com/RiccardoAD/epicode-full-stack-ptoject"
+                  href="https://komododecks.com/recordings/1rRSCTwNClqNNjVO07kl"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -103,7 +103,9 @@ function Projects() {
                 <h2 className="card__title">WordPress</h2>
                 <p className="card__info">theme 2 </p>
                 <a
-                  // href="https://github.com/RiccardoAD/epicode-full-stack-ptoject"
+
+
+                  href="https://komododecks.com/recordings/grZwzwvqJDZAyHZIyMkC"
                   target="_blank"
                   rel="noreferrer"
                 >
